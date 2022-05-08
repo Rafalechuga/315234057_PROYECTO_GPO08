@@ -1,3 +1,13 @@
+newmtl Maceta_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
 newmtl Recibidor1_5_initialShadingGroup
 illum 4
 Kd 0.50 0.50 0.50
@@ -10,6 +20,80 @@ Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd water.png
+Ni 1.00
+newmtl pasted__Maceta_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__Maceta_phong1SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd water.png
+Ni 1.00
+newmtl pasted__pasted__Maceta_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__pasted__Maceta_phong1SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__pasted__pasted__Maceta_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__phong2SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ConcretoGrisTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ConcretoGrisSpecular.png
+Ns 18.00
 newmtl phong1SG
 illum 4
 Kd 0.00 0.00 0.00

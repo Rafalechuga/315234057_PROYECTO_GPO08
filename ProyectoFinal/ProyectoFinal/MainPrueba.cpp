@@ -193,17 +193,23 @@ int main()
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
 	//Shader SkyBoxshader("Shaders/SkyBox.vs", "Shaders/SkyBox.frag");
 	Shader animShader("Shaders/anim.vs", "Shaders/anim.frag");
+	Shader animAguaShader("Shaders/animAgua.vs", "Shaders/animAgua.frag");
 	
 	Model E_MarmolBlanco((char*)"Models/RecibidorModular/MarmolBlanco.obj");
 	Model E_Madera((char*)"Models/RecibidorModular/Madera.obj");
 	Model E_Paja((char*)"Models/RecibidorModular/Paja.obj");
 	Model E_Vidrio((char*)"Models/RecibidorModular/Vidrio.obj");
+	Model E_Arbustos((char*)"Models/RecibidorModular/Arbustos.obj");
+	Model E_AguaEstatica((char*)"Models/RecibidorModular/AguaEstatica.obj");
+	Model E_Agua((char*)"Models/RecibidorModular/Agua.obj");
 	Model E_Combinado((char*)"Models/RecibidorModular/Combinado.obj");
 
 	Model O_Andamios((char*)"Models/ObjetosEscenario/Andamios.obj");
 	Model O_Cajas((char*)"Models/ObjetosEscenario/Cajas.obj");
 	Model O_Unifilas((char*)"Models/ObjetosEscenario/Unifilas.obj");
 	Model O_Cuadros((char*)"Models/ObjetosEscenario/Cuadros.obj");
+	Model O_Cartel((char*)"Models/ObjetosEscenario/Cartel.obj");
+	Model O_Macetas((char*)"Models/ObjetosEscenario/Macetas.obj");
 	Model O_DinoCoco((char*)"Models/ObjetosEscenario/DinoCoco.obj");
 
 	//
@@ -509,6 +515,24 @@ int main()
 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.4f, 0.4f, 0.4f);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.01f, 0.01f, 0.01f);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		E_Arbustos.Draw(lightingShader);
+
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.01f, 0.01f, 0.01f);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		E_AguaEstatica.Draw(lightingShader);
+
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.001f, 0.001f, 0.001f);
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
@@ -561,6 +585,24 @@ int main()
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.001f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		O_Cartel.Draw(lightingShader);
+
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.001f, 0.001f, 0.001f);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		O_Macetas.Draw(lightingShader);
+
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.001f, 0.001f, 0.001f);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		O_DinoCoco.Draw(lightingShader);
 
 
@@ -579,8 +621,24 @@ int main()
 		glDisable(GL_BLEND);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0, 1.0, 1.0, 0.0); 
 
-
 		glBindVertexArray(0);
+
+		animAguaShader.Use();
+		float tiempo = glfwGetTime();
+		modelLoc = glGetUniformLocation(animAguaShader.Program, "model");
+		viewLoc = glGetUniformLocation(animAguaShader.Program, "view");
+		projLoc = glGetUniformLocation(animAguaShader.Program, "projection");
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animAguaShader.Program, "time"), tiempo);
+		E_Agua.Draw(animAguaShader);
+		glBindVertexArray(0);
+
 		glDepthFunc(GL_LESS); 
 
 		// Swap the screen buffers
