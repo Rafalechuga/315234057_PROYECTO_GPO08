@@ -1,0 +1,643 @@
+newmtl Andamio_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd AndamioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks AndamioSpecular.png
+Ns 18.00
+newmtl Andamio_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl Cartel_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CartelTextura.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl Cuadro1_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl Cuadro1_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd dino1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecDino1.png
+Ns 18.00
+newmtl LargeBox_initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl Maceta_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl Recibidor1_5_initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Recibidor1_8_initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl dinoCoco_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hueso.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks specHueso.png
+Ns 18.00
+newmtl dinoCoco_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd rock_large_texture_001.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks specRoca.png
+Ns 18.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__Andamio_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd AndamioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks AndamioSpecular.png
+Ns 18.00
+newmtl pasted__Andamio_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__Cuadro1_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__Cuadro1_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd dino1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecDino1.png
+Ns 18.00
+newmtl pasted__LargeBox_initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__LargeBox_initialShadingGroup2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__LargeBox_initialShadingGroup4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__LargeBox_initialShadingGroup6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__Maceta_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__Maceta_phong1SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl pasted__Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl pasted__pasted__Andamio_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd AndamioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks AndamioSpecular.png
+Ns 18.00
+newmtl pasted__pasted__Andamio_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__pasted__LargeBox_initialShadingGroup2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__pasted__LargeBox_initialShadingGroup4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__pasted__Maceta_phong1SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__pasted__Maceta_phong1SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PEACE_LILLY_5K_u1_v1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap.png
+Ns 18.00
+newmtl pasted__pasted__Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl pasted__pasted__Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__Andamio_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd AndamioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks AndamioSpecular.png
+Ns 18.00
+newmtl pasted__pasted__pasted__Andamio_phong1SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd AndamioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks AndamioSpecular.png
+Ns 18.00
+newmtl pasted__pasted__pasted__Andamio_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__pasted__pasted__Andamio_phong2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__pasted__pasted__LargeBox_initialShadingGroup4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bedna.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__pasted__Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__pasted__Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__Unifila_phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DoradoTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DoradoSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__Unifila_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks TelaSpec.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__pasted__pasted__pasted__phong2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__pasted__pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl pasted__phong2SG28
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ConcretoGrisTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ConcretoGrisSpecular.png
+Ns 18.00
+newmtl pasted__phong4SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PajaTextura.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl pasted__phong7SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd VidrioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks VidrioSpecular.png
+Ns 18.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MarmolTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 18.00
+newmtl phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ConcretoGrisTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ConcretoGrisSpecular.png
+Ns 18.00
+newmtl phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DuelaTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DuelaSpecular.png
+Ns 18.00
+newmtl phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PajaTextura.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MarmolBeigeTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks MarmolBlancoSpec.png
+Ns 18.00
+newmtl phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderaBarniz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecMaderaBarniz.png
+Ns 18.00
+newmtl phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd VidrioTextura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks VidrioSpecular.png
+Ns 18.00
+newmtl phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PuertaTExtura.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks PuertaSpecular.png
+Ns 18.00
+newmtl phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd grass.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Right.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Left.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Back.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Up.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Front.png
+Ni 1.00
+Ks 0.50 0.50 0.50
