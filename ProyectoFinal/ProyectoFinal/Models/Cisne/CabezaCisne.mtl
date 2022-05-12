@@ -1,0 +1,10 @@
+newmtl _Mute_Swan1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 12255_Mute_Swan_diff.jpg
+map_Ka 12255_Mute_Swan_diff.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 12.00
