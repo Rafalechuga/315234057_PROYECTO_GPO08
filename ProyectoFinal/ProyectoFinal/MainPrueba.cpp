@@ -92,7 +92,7 @@ bool rout6 = false;
 bool rout7 = false;
 bool rout8 = false;
 
-// Dino animation
+// Dino skeleton animation
 float rotDinoArms = 0;
 float rotDinoLeg = 0;
 float rotDinoMouth = 0;
@@ -103,6 +103,24 @@ bool dinoArmRotPositive = true;
 bool dinoLegRotPositive = true;
 bool dinoTailRotPositive = false;
 bool dinoMouthRotPositive = true;
+
+//Large dino animation
+float movDinoLargeZ = 0;
+float rotDinoLarge = 0;
+float rotDinoLargeLeg0 = 0;
+float rotDinoLargeLeg1 = 0;
+float rotDinoLargeHead = 0;
+float rotDinoLargeTail = 0;
+bool dinoLargeLeg0RotPositive = true;
+bool dinoLargeLeg1RotPositive = true;
+bool dinoLargeHeadRotPositive = true;
+bool dinoLargeTailRotPositive = true;
+float dinoLargeAni = false;
+float dinoLargeSpeed = 0.007;
+bool rout9 = true;
+bool rout10 = false;
+glm::vec3 iniPosDinoLarge(-27.0, -5.3, -10.0);
+
 
 
 // Keyframes
@@ -273,7 +291,11 @@ int main()
 	Model O_Cartel((char*)"Models/ObjetosEscenario/Cartel.obj");
 	Model O_Macetas((char*)"Models/ObjetosEscenario/Macetas.obj");
 	Model O_Pasto((char*)"Models/ObjetosEscenario/Pasto.obj");
+	Model O_Pinos((char*)"Models/ObjetosEscenario/Pinos.obj");
+	/*Model O_Arboles((char*)"Models/Arboles/Arboles.obj");*/
+	Model O_Vallas((char*)"Models/ObjetosEscenario/Vallas.obj");
 	Model O_SkyBox((char*)"Models/ObjetosEscenario/SkyBox.obj");
+	
 
 	Model Carroceria((char*)"Models/Jeep/Carroceria.obj");
 	Model Llanta((char*)"Models/Jeep/Llanta.obj");
@@ -287,6 +309,16 @@ int main()
 	Model DinoBrazoIzq((char*)"Models/DinoCoco/dinoBrazoIzq.obj");
 	Model DinoBrazoDer((char*)"Models/DinoCoco/dinoBrazoDer.obj");
 	Model DinoMandibula((char*)"Models/DinoCoco/dinoMandibula.obj");
+
+	Model DinoLargoCuerpo((char*)"Models/DinoLargo/DinoLargoCuerpo.obj");
+	Model DinoLargoCabeza((char*)"Models/DinoLargo/DinoLargoCabeza.obj");
+	Model DinoLargoCola((char*)"Models/DinoLargo/DinoLargoCola.obj");
+	Model DinoLargoPiernaIzq((char*)"Models/DinoLargo/DinoLargoPiernaIzq.obj");
+	Model DinoLargoPiernaDer((char*)"Models/DinoLargo/DinoLargoPiernaDer.obj");
+	Model DinoLargoMusloIzq((char*)"Models/DinoLargo/DinoLargoMusloIzq.obj");
+	Model DinoLargoMusloDer((char*)"Models/DinoLargo/DinoLargoMusloDer.obj");
+	
+
 
 	Model Cubo((char*)"Models/Cubo/Cubo.obj");
 
@@ -755,6 +787,12 @@ int main()
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.001f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		O_Vallas.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		O_SkyBox.Draw(lightingShader);
 
 		glm::mat4 tmp = glm::mat4(1.0f);
@@ -862,23 +900,81 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		DinoMandibula.Draw(lightingShader);
 
-		/*0.480000, 0.790000, -7.810083
-		0.130000, 0.700000, -7.810083
-		- 1.169999, 0.770000, -8.600101
-		- 0.899999, 0.770000, -9.050112
-		- 1.789999, 1.229999, -9.320118*/
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoCuerpo.Draw(lightingShader);
+		
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.55f, 3.5f, 2.2f));
+		model = glm::rotate(model, glm::radians(rotDinoLargeLeg0), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoPiernaIzq.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-0.86f, 3.54f, 2.3f));
+		model = glm::rotate(model, glm::radians(-rotDinoLargeLeg0), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoPiernaDer.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.49f, 4.3f, -1.8f));
+		model = glm::rotate(model, glm::radians(-rotDinoLargeLeg0), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoMusloIzq.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-0.67f, 4.3f, -1.8f));
+		model = glm::rotate(model, glm::radians(rotDinoLargeLeg0), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoMusloDer.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-0.17, 5.5, 2.2));
+		model = glm::rotate(model, glm::radians(rotDinoLargeLeg0), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoCabeza.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, iniPosDinoLarge + glm::vec3(0, 0, movDinoLargeZ));
+		model = glm::rotate(model, glm::radians(rotDinoLarge), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-0.23, 3.5, -3.3));
+		model = glm::rotate(model, glm::radians(-rotDinoLargeLeg0), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DinoLargoCola.Draw(lightingShader);
 
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0, 1.0, 1.0, 0.35);
 		
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0, 1.0, 1.0, 0.35);
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.001f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		E_Vidrio.Draw(lightingShader);
+
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0, 1.0, 1.0, 80.0);
+		model = glm::mat4(1);
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		O_Pinos.Draw(lightingShader);
+
+		/*model = glm::mat4(1);
+		model = glm::scale(model, glm::vec3(0.001f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		O_Arboles.Draw(lightingShader);*/
 
 		glDisable(GL_BLEND);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0, 1.0, 1.0, 0.0); 
@@ -1157,6 +1253,49 @@ void animacion()
 			Light3 = glm::vec3(0);
 			Light4 = glm::vec3(0);
 		}
+		//large dinosaur animation 
+		if (dinoLargeAni)
+		{
+			rotDinoLargeHead -= 0.3;
+			rotDinoLargeTail -= 0.3;
+			rotDinoLargeLeg1 += 0.3;
+
+			if (dinoLargeLeg0RotPositive)
+			{
+				rotDinoLargeLeg0 -= 0.15;
+				if (rotDinoLargeLeg0 < -20.0f)
+					dinoLargeLeg0RotPositive = false;
+			}
+			else
+			{
+				rotDinoLargeLeg0 += 0.15;
+				if (rotDinoLargeLeg0 > 20.0f)
+					dinoLargeLeg0RotPositive = true;
+			}
+
+			if (rout9)
+			{
+				rotDinoLarge = 0.0f;
+				movDinoLargeZ += dinoLargeSpeed;
+
+
+				if ((iniPosDinoLarge.z + movDinoLargeZ) > 15.0f)
+				{
+					rout9 = false;
+					rout10 = true;
+				}
+			}
+			if (rout10)
+			{
+				rotDinoLarge = 180;
+				movDinoLargeZ -= dinoLargeSpeed;
+				if ((iniPosDinoLarge.z + movDinoLargeZ) < -10.0f)
+				{
+					rout10 = false;
+					rout9 = true;
+				}
+			}
+		}
 
 	}
 
@@ -1272,7 +1411,14 @@ void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode
 	
 	if (keys[GLFW_KEY_N])
 	{
-
+		if (!dinoLargeAni)
+		{
+			dinoLargeAni = true;
+		}
+		else
+		{
+			dinoLargeAni = false;
+		}
 	}
 
 	if (keys[GLFW_KEY_Z])
