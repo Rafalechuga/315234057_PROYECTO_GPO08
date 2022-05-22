@@ -1,0 +1,77 @@
+newmtl claws
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl eyeball
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.89 1.00 0.81
+Ns 50.00
+newmtl mouth
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl skin
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl spikes
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl teeth
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl tongue
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DR_Brachio_C.jpg
+map_Ka DR_Brachio_C.jpg
+bump  -bm 0 DR_Brachio_B.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 0.00
